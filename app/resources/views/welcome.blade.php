@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <title>Пошук фігур</title>
     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/file-input.css">
-    @vite(['/app/resources/css/app.css'])
+    @vite(['resources/css/file-input.css'])
 </head>
 
 <body>
