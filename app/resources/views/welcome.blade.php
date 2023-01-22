@@ -9,13 +9,15 @@
 </head>
 
 <body>
-    <form id="upload-container" method="POST" action="send.php">
+    <form id="upload-container" method="POST" action="{{ route('send-file') }}" enctype="multipart/form-data">
+        @csrf
         <img id="upload-image" src="https://habrastorage.org/webt/dr/qg/cs/drqgcsoh1mosho2swyk3kk_mtwi.png">
         <div>
-            <input id="file-input" type="file" name="file" multiple>
+            <input type="file" name="file" id="file-input">
             <label for="file-input">Select a file</label>
             <span>or drag it here</span>
         </div>
+        <button id="upload-button" type="submit">Upload</button>
     </form>
 
 </body>
