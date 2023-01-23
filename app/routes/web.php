@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/upload', [FileUploadController::class, 'upload'])->name('send-file');
+Route::post('/upload', [FileUploadController::class, 'predictFigure'])->name('send-file');
