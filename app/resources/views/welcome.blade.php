@@ -17,7 +17,7 @@
             <label for="file-input">Select a file</label>
             <span>or drag it here</span>
         </div>
-        <button id="upload-button" type="submit">Upload</button>
+        <button hidden id="upload-button" type="submit">Upload</button>
     </form>
 
 </body>

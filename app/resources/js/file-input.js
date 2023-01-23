@@ -29,11 +29,13 @@ $(document).ready(function(){
 		dropZone.removeClass('dragover');
 		let files = e.originalEvent.dataTransfer.files;
 		sendFiles(files);
+        document.getElementById('upload-button').click();
 	});
 
 	$('#file-input').change(function() {
 		let files = this.files;
 		sendFiles(files);
+        document.getElementById('upload-button').click();
 	});
 
 
@@ -45,16 +47,5 @@ $(document).ready(function(){
 				Data.append('images[]', file);
 			}
 		});
-
-		// $.ajax({
-		// 	url: dropZone.attr('action'),
-		// 	type: dropZone.attr('method'),
-		// 	data: Data,
-		// 	contentType: false,
-		// 	processData: false,
-		// 	success: function(data) {
-		// 		alert ('Файлы были успешно загружены!');
-		// 	}
-		// });
 	}
 })
