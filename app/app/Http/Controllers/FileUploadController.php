@@ -7,7 +7,9 @@ use App\Providers\PredictFiguresServiceProvider;
 
 class FileUploadController extends Controller
 {
-    private $predictService;
+    private PredictFiguresServiceProvider $predictService;
+
+
     public function __construct(PredictFiguresServiceProvider $predictService)
     {
         $this->predictService = $predictService;
